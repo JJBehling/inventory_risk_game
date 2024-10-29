@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inherent Risk vs. Control Risk Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Inherent Risk vs. Control Risk Challenge</h1>
+        <p>Identify if the scenario is an inherent or control risk!</p>
+        <button id="start-button">Start Game</button>
+        <p>The timer gets shorter with each correct answer. How many can you get right before time runs out?</p>
+    </div>
+
+    <div id="game-screen" style="display: none;">
+        <div id="question-display"></div>
+        <div id="timer">Time Left: <span id="time-remaining">15.0</span> seconds</div>
+        <div id="buttons">
+            <button id="inherent-risk-button">Inherent Risk</button>
+            <button id="control-risk-button">Control Risk</button>
+        </div>
+        <div id="score-display">Score: <span id="score">0</span></div>
+    </div>
+
+    <div id="end-screen" style="display: none;">
+        <h2>Game Over</h2>
+        <p>Your Score: <span id="final-score"></span></p>
+        <button id="retry-button">Play Again</button>
+        <div id="high-score-display">
+            High Scores:
+            <ul id="high-scores"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

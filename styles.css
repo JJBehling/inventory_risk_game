@@ -1,0 +1,107 @@
+/* Spy Theme Colors */
+body {
+    font-family: 'Orbitron', sans-serif; /* Sleek spy font */
+    background-color: #1a1a1a; /* Dark background */
+    color: #00FF41; /* Neon green text, reminiscent of old-school spy screens */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #00FF41; /* Neon green for headings */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.7);
+}
+
+/* Start Screen, Game Screen, End Screen */
+#start-screen, #game-screen, #end-screen {
+    margin: 100px auto;
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black for spy effect */
+    border: 2px solid #00FF41; /* Neon green border */
+    box-shadow: 0 0 10px #00FF41; /* Glowing effect */
+    border-radius: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #000; /* Black background */
+    color: #00FF41; /* Neon green text */
+    border: 2px solid #00FF41;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #00FF41;
+    color: #000;
+    box-shadow: 0 0 10px #00FF41;
+}
+
+/* Timer */
+#timer {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #ff0000; /* Red to create urgency */
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+}
+
+/* Score Display */
+#score-display {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #00FF41;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.8);
+}
+
+/* High Scores */
+#high-score-display {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    color: #00FF41;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.7);
+}
+
+/* Background pattern for spy theme */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('spy-background.jpg'); /* You can use an image like a blueprint or digital grid */
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Add subtle transition effects for all interactive elements */
+button, #timer, #score-display {
+    transition: all 0.3s ease;
+}
+
+/* Spy logo or graphic for the start and end screen */
+#start-screen:before, #end-screen:before {
+    content: url('spy-logo.png'); /* Add a cool spy logo graphic */
+    display: block;
+    margin: 0 auto 20px auto;
+}
