@@ -100,9 +100,3 @@ button, #timer, #score-display {
     transition: all 0.3s ease;
 }
 
-/* Logo or graphic for the start and end screen */
-#start-screen:before, #end-screen:before {
-    content: url('images/magnifyingglass.jpeg'); /* Replace with a logo or graphic fitting the audit theme */
-    display: block;
-    margin: 0 auto 20px auto;
-}
